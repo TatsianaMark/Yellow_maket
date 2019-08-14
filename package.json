@@ -1,0 +1,23 @@
+{
+  "name": "yellow_maket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass  styles/style.scss  styles/style.css",
+    "watch": "sass --watch  styles/style.scss:styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TatsianaMark/Yellow_maket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TatsianaMark/Yellow_maket/issues"
+  },
+  "homepage": "https://github.com/TatsianaMark/Yellow_maket#readme",
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}
