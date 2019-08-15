@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass  styles/style.scss  styles/style.css",
-    "watch": "sass --watch  styles/style.scss:styles/style.css"
+    "sass_media": "sass  styles/media.scss  styles/media.css",
+    "watch": "sass --watch  styles/style.scss:styles/style.css",
+    "watch_media": "sass --watch  styles/media.scss:styles/media.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/TatsianaMark/Yellow_maket#readme",
   "dependencies": {
+    "sass": "^1.22.9",
     "watch": "^1.0.2"
   }
 }
