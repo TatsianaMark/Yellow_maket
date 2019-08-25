@@ -4,23 +4,29 @@
   box-sizing: border-box;
   outline: none;
 }
+$border: 1px red solid;
+
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+//$max-width-conten@mixin flex-row{
+//  display: flex;
+//  flex-direction: row;
+//  flex-wrap: nowrap;
+//}t : 1024px;
+
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
   text-decoration: none;
 }
-
-$border: 1px red solid;
-//$max-width-content : 1024px;
-@mixin flex-row{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-}
 /*-----------------BLOCK FIRST MEDIA-------------------*/
 
 .block_first{
+  max-height: 390px;
   border: $border;
   background: url(../images/Layer_20.png) center top/cover no-repeat;
 }
@@ -74,7 +80,7 @@ flex-wrap: nowrap;
   position: relative;
 }
 
-.video_content {
+.video_content {  border: $border;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -82,6 +88,39 @@ flex-wrap: nowrap;
   left: 0;
 }
 /*-----------------BLOCK ICON -------------------*/
+.block_icon {  border: $border;
+  background: #f2f0f0;
+}
+.block_all_icon {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.icons {
+  text-align: center;
+  width: 33%;
+}
+.icons > img {
+  width: 60px;
+  height: 46px;
+  margin: 10px 0;
+}
+.icon_text {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 4%;
+}
+
+
+
+
+
+
+
+
+
 /*-----------------BLOCK THIRD MIDDLE-------------------*/
 /*-----------------BLOCK TWITTER YELLOW-------------------*/
 /*-----------------BLOCK FREE FINAL -------------------*/
