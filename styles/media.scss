@@ -11,6 +11,13 @@
   flex-wrap: nowrap;
 }
 
+@mixin flex-row-center-center {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
 $border: 1px red solid;
 
 @media (max-width: 767px) {
@@ -62,7 +69,6 @@ $border: 1px red solid;
   }
 
   .block_media {
-    padding: 30px 0 70px;
     position: relative;
   }
   //=================SLIDER======================
@@ -87,7 +93,6 @@ $border: 1px red solid;
     /*для растяжки за границы экрана inline-flex*/
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
     width: 100%;
   }
 
@@ -169,10 +174,7 @@ $border: 1px red solid;
   //=================BLOCK ICON======================
   .block_icon {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+   @include flex-row-center-center;
   }
   .block_all_icon {
     width: 1024px;
@@ -192,4 +194,86 @@ $border: 1px red solid;
   .icon_text {
     font-size: 24px;
   }
+
+//-----------------BLOCK MIDDLE-------------------
+  .block_middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background: url(../images/bg_.jpg) round;
+    height: 450px;
+    & .block_main{
+        max-width: 1024px;
+        height: 90%;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+     & .middle_title {
+        display: block;
+        margin-left: 10px;
+
+        & p {
+          color: white;
+          text-transform: uppercase;
+          font-size: 28px;
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
+.middle_content {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 234px ;
+
+  & .middle_content_upper {
+    display: flex;
+    flex-direction: row;
+
+    & .middle_content_text, .middle_content_video {
+      width: 32%;
+      height: 70%;
+
+
+      &.middle_content_text_info {
+        width: 85%;
+      }
+
+      .middle_content_text_plus {
+        width: 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        color: white;
+      }
+    }
+  }
+  .middle_content_twitter{
+    width: 32%;
+    height: 70%;
+    @include flex-row;
+    background: orange;
+    &_counter {
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    &_logo{
+      width: 92%;
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+
+
+
 }

@@ -26,8 +26,6 @@ a {
 /*-----------------BLOCK FIRST MEDIA-------------------*/
 
 .block_first{
-  max-height: 390px;
-  border: $border;
   background: url(../images/Layer_20.png) center top/cover no-repeat;
 }
 .header{
@@ -80,7 +78,7 @@ a {
   position: relative;
 }
 
-.video_content {  border: $border;
+.video_content {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -88,7 +86,7 @@ a {
   left: 0;
 }
 /*-----------------BLOCK ICON -------------------*/
-.block_icon {  border: $border;
+.block_icon {
   background: #f2f0f0;
 }
 .block_all_icon {
@@ -112,15 +110,100 @@ a {
   font-size: 12px;
   margin-bottom: 4%;
 }
+/*-----------------BLOCK  MIDDLE-------------------*/
+.block_middle{
+  width: 100%;
+  height: 180px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block_main {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.middle_title {
+  display: none;
+}
+.middle_content_calendar {
+  display: none;
+}
+
+.middle_slider-controls {
+  display: none;
+}
+
+.middle_slide:not(:first-child) {
+  display: none;
+}
+
+.block_main > input {
+  display: none;
+}
+.middle_content {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.middle_content_upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.middle_content_text {
+  width: 49%;
+  height: 100%;
+  background: orange;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.middle_content_twitter {
+  display: none;
+}
+
+.middle_content_text_info {
+  width: 85%;
+  font-family: Helvetica, 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.middle_content_text_plus {
+  width: 15%;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.middle_content_video {
+  width: 49%;
+  height: 100%;
+}
+
+.middle_content_video iframe {
+  width: 100%;
+  height: 100%;
+}
 
 
 
 
-
-
-
-
-
-/*-----------------BLOCK THIRD MIDDLE-------------------*/
 /*-----------------BLOCK TWITTER YELLOW-------------------*/
 /*-----------------BLOCK FREE FINAL -------------------*/
