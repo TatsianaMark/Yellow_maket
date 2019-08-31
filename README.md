@@ -1,4 +1,4 @@
-# Yellow_maket
+# Yellow_responsive
 Install Node.js
 Built With
 (Sass)
