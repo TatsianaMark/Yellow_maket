@@ -205,6 +205,7 @@ $border: 1px red solid;
     background: url(../images/bg_.jpg) round;
     height: 450px;
     & .block_main{
+      border: $border;
         max-width: 1024px;
         height: 90%;
         display: inline-flex;
@@ -226,13 +227,15 @@ $border: 1px red solid;
     }
   }
 .middle_content {
+  border: $border;
   justify-content: flex-start;
   flex-wrap: wrap;
   height: 234px ;
 
-  & .middle_content_upper {
+  & .middle_content_upper { border: $border;
     display: flex;
     flex-direction: row;
+    height: 100%;
 
     & .middle_content_text, .middle_content_video {
       width: 32%;
@@ -258,6 +261,7 @@ $border: 1px red solid;
     width: 32%;
     height: 70%;
     @include flex-row;
+    margin-left: 40px;
     background: orange;
     &_counter {
       color: white;
@@ -269,6 +273,32 @@ $border: 1px red solid;
       @include flex-row;
       justify-content: center;
       align-items: center;
+    }
+  }
+  &_calendar{
+    border: $border;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90px;
+    height: 70px;
+    background: rgba(236,174,0,0.97);
+    margin-top: -9%;
+     &_date{
+       text-align: center;
+       & p{
+         color: white;
+         font-size: 44px;
+         font-weight: bold;
+       }
+     }
+    &_month{
+      text-align: center;
+      & p{
+        color: rgba(145,97,0,0.97);
+        font-size: 16px;
+        text-transform: uppercase;
+      }
     }
   }
 }

@@ -202,6 +202,7 @@
     height: 450px;
   }
   .block_middle .block_main {
+    border: 1px red solid;
     max-width: 1024px;
     height: 90%;
     display: inline-flex;
@@ -222,13 +223,16 @@
   }
 
   .middle_content {
+    border: 1px red solid;
     justify-content: flex-start;
     flex-wrap: wrap;
     height: 234px;
   }
   .middle_content .middle_content_upper {
+    border: 1px red solid;
     display: flex;
     flex-direction: row;
+    height: 100%;
   }
   .middle_content .middle_content_upper .middle_content_text, .middle_content .middle_content_upper .middle_content_video {
     width: 32%;
@@ -252,6 +256,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-left: 40px;
     background: orange;
   }
   .middle_content .middle_content_twitter_counter {
@@ -266,6 +271,32 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+  }
+  .middle_content_calendar {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90px;
+    height: 70px;
+    background: rgba(236, 174, 0, 0.97);
+    margin-top: -9%;
+  }
+  .middle_content_calendar_date {
+    text-align: center;
+  }
+  .middle_content_calendar_date p {
+    color: white;
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .middle_content_calendar_month {
+    text-align: center;
+  }
+  .middle_content_calendar_month p {
+    color: rgba(145, 97, 0, 0.97);
+    font-size: 16px;
+    text-transform: uppercase;
   }
 }
 
