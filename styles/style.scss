@@ -201,9 +201,44 @@ a {
   width: 100%;
   height: 100%;
 }
+/*-----------------BLOCK  MIDDLE SLIDES-------------------*/
+.middle_slider-controls {
+  display: none;
+}
+
+.middle_slide:not(:first-child) {
+  display: none;
+}
+
+.middle_main > input {
+  display: none;
+}
+/*-----------------BLOCK TWITTER -------------------*/
+.block_twitter {
+  width: 100%;
+  background: #efdd00;
+  @include flex-row;
+  justify-content: space-around;
+
+  &_logo_twit {
+    background: url("../images/twitter_logo.png")center;
+    background-size: 100px;
+  }
+
+  &_logo_twit{
+    width: 43%;
+    height: 100%;
+    background: transparent;
+  }
+
+  &_twitter_messages {
+    width: 43%;
+    height: 100%;
+    background: transparent;
+  }
+}
 
 
 
 
-/*-----------------BLOCK TWITTER YELLOW-------------------*/
 /*-----------------BLOCK FREE FINAL -------------------*/

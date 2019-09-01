@@ -214,7 +214,43 @@ a {
   height: 100%;
 }
 
-/*-----------------BLOCK TWITTER YELLOW-------------------*/
+/*-----------------BLOCK  MIDDLE SLIDES-------------------*/
+.middle_slider-controls {
+  display: none;
+}
+
+.middle_slide:not(:first-child) {
+  display: none;
+}
+
+.middle_main > input {
+  display: none;
+}
+
+/*-----------------BLOCK TWITTER -------------------*/
+.block_twitter {
+  width: 100%;
+  background: #efdd00;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.block_twitter_logo_twit {
+  background: url("../images/twitter_logo.png") center;
+  background-size: 100px;
+}
+.block_twitter_logo_twit {
+  width: 43%;
+  height: 100%;
+  background: transparent;
+}
+.block_twitter_twitter_messages {
+  width: 43%;
+  height: 100%;
+  background: transparent;
+}
+
 /*-----------------BLOCK FREE FINAL -------------------*/
 
 /*# sourceMappingURL=style.css.map */

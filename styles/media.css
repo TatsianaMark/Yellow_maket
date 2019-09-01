@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .slides > input, .slides > label {
     display: none;
   }
@@ -297,6 +297,130 @@
     color: rgba(145, 97, 0, 0.97);
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  .middle_slider-controls {
+    display: inline-block;
+    width: 100%;
+    max-width: 900px;
+    height: 30px;
+    order: 2;
+  }
+
+  label {
+    display: inline-block;
+    width: 25%;
+  }
+
+  #label1, #label2, #label3, #label4 {
+    position: absolute;
+    top: 95%;
+  }
+
+  #label2 {
+    left: 25%;
+  }
+
+  #label3 {
+    left: 50%;
+  }
+
+  #label4 {
+    left: 75%;
+  }
+
+  label {
+    width: 24%;
+    height: 15px;
+    background: rgba(228, 228, 221, 0.97);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  label:hover {
+    background: darkorange;
+    outline: orange;
+    transition: 0.2s;
+  }
+
+  #slide1:checked ~ #label1 {
+    background: darkorange;
+  }
+
+  #slide2:checked ~ #label2 {
+    background: darkorange;
+  }
+
+  #slide3:checked ~ #label3 {
+    background: darkorange;
+  }
+
+  #slide4:checked ~ #label4 {
+    background: darkorange;
+  }
+
+  .middle_main > input {
+    display: none;
+  }
+
+  .middle_main_slide1 {
+    height: inherit;
+    width: 1024px;
+  }
+
+  .middle_slide:not(:first-child) {
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: inherit;
+  }
+
+  .middle_slide {
+    max-width: 1024px;
+  }
+
+  .middle_slider {
+    width: 400%;
+    height: 96%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    order: 1;
+  }
+
+  #slide1:checked ~ #slider {
+    left: 0;
+    transition: 0.7s;
+  }
+
+  #slide2:checked ~ #slider {
+    left: -100%;
+    transition: 0.7s;
+  }
+
+  #slide3:checked ~ #slider {
+    left: -200%;
+    transition: 0.7s;
+  }
+
+  #slide4:checked ~ #slider {
+    left: -300%;
+    transition: 0.7s;
+  }
+
+  input {
+    display: none;
+  }
+
+  .twitter {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .middle_content_calendar {
+    margin-top: -7%;
   }
 }
 
