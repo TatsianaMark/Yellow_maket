@@ -369,13 +369,6 @@
     width: 1024px;
   }
 
-  .middle_slide:not(:first-child) {
-    display: block;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: inherit;
-  }
-
   .middle_slide {
     max-width: 1024px;
   }

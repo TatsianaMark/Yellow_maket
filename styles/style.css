@@ -121,7 +121,6 @@ a {
 /*-----------------BLOCK  MIDDLE-------------------*/
 .block_middle {
   width: 100%;
-  height: 180px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -230,6 +229,7 @@ a {
 /*-----------------BLOCK TWITTER -------------------*/
 .block_twitter {
   width: 100%;
+  height: 160px;
   background: #efdd00;
   display: flex;
   flex-direction: row;
@@ -237,20 +237,71 @@ a {
   justify-content: space-around;
 }
 .block_twitter_logo_twit {
-  background: url("../images/twitter_logo.png") center;
-  background-size: 100px;
+  background: url("../images/twitter_logo.png") round;
 }
 .block_twitter_logo_twit {
   width: 43%;
-  height: 100%;
-  background: transparent;
+  height: 106px;
+  margin-top: 6%;
+  margin-left: 2%;
 }
-.block_twitter_twitter_messages {
+.block_twitter_messages_text {
+  background: url("../images/Rectangle .png") round;
+  color: #8f8e8e;
+}
+.block_twitter_messages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   width: 43%;
-  height: 100%;
-  background: transparent;
+}
+.block_twitter_messages p {
+  font-size: 2.6vw;
+  margin-left: 15px;
+  margin-top: 2px;
+  line-height: 14px;
+}
+.block_twitter_messages_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.block_twitter_messages_form_input {
+  width: 70%;
+  height: 90%;
+  border: 1px #d0a806 solid;
+  border-radius: 10px 0 0 10px;
+}
+.block_twitter_messages_form_button {
+  width: 31%;
+  height: 89%;
+  border-radius: 0 10px 10px 0;
+  border: 2px transparent;
+  background-color: #c4a300;
+  color: white;
+  font-size: 11px;
 }
 
 /*-----------------BLOCK FREE FINAL -------------------*/
+.block_free_container {
+  width: 100%;
+  background: #474747;
+  height: 250px;
+}
+.block_free_container_title_last {
+  text-align: center;
+}
+.block_free_container_title_last p {
+  text-transform: uppercase;
+  color: orange;
+  font-size: 18px;
+}
+.block_free_container_view {
+  background: url("../images/devices.png");
+}
+.block_free_container_list {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
