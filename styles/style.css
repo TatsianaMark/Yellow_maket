@@ -283,8 +283,8 @@ a {
   font-size: 11px;
 }
 
-/*-----------------BLOCK FREE FINAL -------------------*/
-.block_free_container {
+/*-----------------BLOCK FREE  -------------------*/
+.block_free {
   width: 100%;
   background: #474747;
   height: 250px;
@@ -296,11 +296,30 @@ a {
   text-transform: uppercase;
   color: orange;
   font-size: 18px;
+  padding-top: 7%;
 }
-.block_free_container_view {
-  background: url("../images/devices.png");
+.block_free_container_view > img {
+  width: 100%;
 }
 .block_free_container_list {
+  display: none;
+}
+
+.block_footer {
+  width: 100%;
+}
+.block_footer_content {
+  background: #474747;
+  box-shadow: black 0 5px 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.block_footer_content_logo img {
+  width: 51%;
+  margin-left: 14%;
+}
+.block_footer_content_author {
   display: none;
 }
 
