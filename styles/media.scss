@@ -20,7 +20,7 @@
 
 $border: 1px red solid;
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
 .slides > input,.slides > label {
   display: none;
 }
@@ -30,6 +30,10 @@ $border: 1px red solid;
 }
 
 @media (min-width: 768px) {
+
+  .middle_slide:not(:first-child) {
+    display: block;
+  }
 
   .large_container {
     max-width: 1024px;
@@ -80,6 +84,7 @@ $border: 1px red solid;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    padding-bottom: 7%;
   }
   #first_slide {
     display: inline-flex;
@@ -107,7 +112,7 @@ $border: 1px red solid;
     text-transform: uppercase;
     font-size: 5.5vw;
     text-align: center;
-    margin-left: 64px;
+    margin: auto;
   }
 
   .slide_text h2 {
@@ -196,6 +201,9 @@ $border: 1px red solid;
   }
 
 //-----------------BLOCK MIDDLE-------------------
+  .block_twitter{
+    display: none;
+  }
   .block_middle{
     display: flex;
     flex-direction: column;
@@ -205,9 +213,8 @@ $border: 1px red solid;
     background: url(../images/bg_.jpg) round;
     height: 450px;
     & .block_main{
-      border: $border;
         max-width: 1024px;
-        height: 90%;
+        height: 96%;
         display: inline-flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -216,6 +223,7 @@ $border: 1px red solid;
      & .middle_title {
         display: block;
         margin-left: 10px;
+       margin-bottom: -1%;
 
         & p {
           color: white;
@@ -227,12 +235,11 @@ $border: 1px red solid;
     }
   }
 .middle_content {
-  border: $border;
   justify-content: flex-start;
   flex-wrap: wrap;
-  height: 234px ;
+  height: 291px;
 
-  & .middle_content_upper { border: $border;
+  & .middle_content_upper {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -276,7 +283,6 @@ $border: 1px red solid;
     }
   }
   &_calendar{
-    border: $border;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -368,20 +374,13 @@ $border: 1px red solid;
     width: 1024px;
   }
 
-  //.middle_slide:not(:first-child) {
-  //  display: block;
-  //  flex-direction: row;
-  //  flex-wrap: nowrap;
-  //  height: inherit;
-  //}
-
   .middle_slide {
     max-width: 1024px;
   }
 
   .middle_slider {
     width: 400%;
-    height: 96%;
+    height: 88%;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -415,9 +414,68 @@ $border: 1px red solid;
   .twitter {
     display: none;
   }
+  //-----------------BLOCK FREE FINAL-------------------
+.block_free{
+  width: 100%;
+  background: #474747;
+  height: auto;
+  &_container{
+    max-width: 1024px;
+    margin: auto;
+    &_title_last{
+     p{
+       padding-top: 2%;
+       font-size: 3.5vw;
+     }
+    }
+    &_view{
+      width: 54%;
+    }
+    &_list{
+      display: block;
+      width: 45%;
+      margin: auto;
+      li{
+        color: #f5c506;
+        font-size:  18px;
+        span{
+          color: #a9a9a7;
+        }
+      }
+    }
+    &_flex_final{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    }
+  }
+  //------BlOCK FOOTER--------
+  .block_footer{
+    height: auto;
+    width: 100%;
+    background:#4c4c4c;
+    &_content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &_logo{
+        width: 25%;
+        margin-left: 6%;
+      }
+      &_author{
+        display: block;
+        color: white;
+        font-size: 13px;
+        margin-right: 9%;
+        margin-top: 1%;
+
+      }
+    }
+
+  }
 }
-@media (max-width: 1024px) {
- .middle_content_calendar {
-    margin-top: -7%;
+@media (min-width: 1024px){
+  .middle_content_text_info{
+    font-size: 24px;
   }
 }
