@@ -2,7 +2,9 @@
 Install Node.js
 Built With
 (Sass)
-MOBILE VERSION
-<a href="https://worldpng.ru" target="_blank"><img src="https://cdn1.worldpng.ru/uploads/2019/9/21/499d05a2b733a2d32c332e7440d80e04-full.gif" border="0"/></a>
 WEBSITE VERSION
-<a href="https://worldpng.ru" target="_blank"><img src="https://cdn1.worldpng.ru/uploads/2019/9/21/b7b0cde26df9385996e35c21ad2a4e45-full.gif" border="0"/></a>
+
+<a href="https://ibb.co/qdD4dCT"><img src="https://i.ibb.co/qdD4dCT/13.png" alt="13" border="0"></a> 
+<a href="https://ibb.co/N6wMJfk"><img src="https://i.ibb.co/N6wMJfk/14.png" alt="14" border="0"></a>
+<a href="https://ibb.co/mq5tr7v"><img src="https://i.ibb.co/mq5tr7v/15.png" alt="15" border="0"></a>
+
