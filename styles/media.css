@@ -22,6 +22,7 @@
   .header {
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 4%;
   }
 
   .header_menu {
@@ -93,9 +94,10 @@
     display: block;
     font-family: "Asap", sans-serif;
     text-transform: uppercase;
-    font-size: 5.5vw;
+    font-size: 4.5vw;
     text-align: center;
     margin: auto;
+    margin-left: 92px;
   }
 
   .slide_text h2 {
