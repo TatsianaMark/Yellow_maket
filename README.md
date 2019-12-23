@@ -1,7 +1,7 @@
 # Yellow_responsive_layout
 Slides made only with CSS
 
-Click me:)  yellow-responsive-layout.netlify.com
+Click me:) https://yellow-responsive-layout.netlify.com
 
 Install Node.js
 Built With
